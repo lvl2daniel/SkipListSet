@@ -224,55 +224,55 @@ public class SkipListTestHarness {
 	public SkipListTestHarness() {}
 	
 	public static void main(String args[]) {
-			// SkipListTestHarness.executeStringCase(100000, 10000, 1000, false, true);
-			// System.gc();
-			// SkipListTestHarness.executeStringCase(1000000, 10000, 1000, false, true);
-			// System.gc();
-			// SkipListTestHarness.executeStringCase(1000000, 100000, 1000, false, true);
-			// System.gc();
-			// SkipListTestHarness.executeDoubleCase(100000, 10000, true, true);
-		// System.gc();
-		// SkipListTestHarness.executeDoubleCase(1000000, 10000, false, true);
-		// System.gc();
-		// SkipListTestHarness.executeDoubleCase(1000000, 100000, false, true);
-		// System.gc();
-		// SkipListTestHarness.executeIntCase(1000, 100, true, true);
-		// System.gc();
-		// SkipListTestHarness.executeIntCase(100000, 10000, true, true);
-		// System.gc();
-		// SkipListTestHarness.executeIntCase(1000000, 10000, false, true);
-		// System.gc();
-		// SkipListTestHarness.executeIntCase(10000000, 10000, false, true);
-		// System.gc();
-		// SkipListTestHarness.executeIntCase(10000000, 1000000, false, true);	
-		// System.gc();
-		// SkipListTestHarness.executeIntCase(10000000, 10000000, false, true);	
-		// System.gc();
-		SkipListSet set = new SkipListSet();
-		set.add(1);
-		set.add(2);
-		set.add(3);
-		set.add(4);
-		set.add(5);
-		set.add(6);
-		set.add(7);
-		set.add(8);
-		set.add(9);
-		set.add(10);
-		set.remove(10);
-		//set.removeAll(set);
-		SkipListSet set2 = new SkipListSet();
-		set2.addAll(set);
-		set2.add(11);
-		//set2.removeAll(set);
-		set2.add(12);
-		set2.retainAll(set);
-		Object[] arr = set2.toArray();
-		for (Object i : arr) {
-			System.out.println(i);
-		}
-		SkipListSet set3 = new SkipListSet<>(set2);
-		System.out.println(set3.equals(set2));
+		SkipListTestHarness.executeStringCase(100000, 10000, 1000, false, true);
+		System.gc();
+		SkipListTestHarness.executeStringCase(1000000, 10000, 1000, false, true);
+		System.gc();
+		SkipListTestHarness.executeStringCase(1000000, 100000, 1000, false, true);
+		System.gc();
+		SkipListTestHarness.executeDoubleCase(100000, 10000, true, true);
+		System.gc();
+		SkipListTestHarness.executeDoubleCase(1000000, 10000, false, true);
+		System.gc();
+		SkipListTestHarness.executeDoubleCase(1000000, 100000, false, true);
+		System.gc();
+		SkipListTestHarness.executeIntCase(1000, 100, true, true);
+		System.gc();
+		SkipListTestHarness.executeIntCase(100000, 10000, true, true);
+		System.gc();
+		SkipListTestHarness.executeIntCase(1000000, 10000, false, true);
+		System.gc();
+		SkipListTestHarness.executeIntCase(10000000, 10000, false, true);
+		System.gc();
+		SkipListTestHarness.executeIntCase(10000000, 1000000, false, true);	
+		System.gc();
+		SkipListTestHarness.executeIntCase(10000000, 10000000, false, true);	
+		System.gc();
+		// SkipListSet set = new SkipListSet();
+		// set.add(1);
+		// set.add(2);
+		// set.add(3);
+		// set.add(4);
+		// set.add(5);
+		// set.add(6);
+		// set.add(7);
+		// set.add(8);
+		// set.add(9);
+		// set.add(10);
+		// set.remove(10);
+		// //set.removeAll(set);
+		// SkipListSet set2 = new SkipListSet();
+		// set2.addAll(set);
+		// set2.add(11);
+		// //set2.removeAll(set);
+		// set2.add(12);
+		// set2.retainAll(set);
+		// Object[] arr = set2.toArray();
+		// for (Object i : arr) {
+		// 	System.out.println(i);
+		// }
+		// SkipListSet set3 = new SkipListSet<>(set2);
+		// System.out.println(set3.equals(set2));
 		
  	}
 }
